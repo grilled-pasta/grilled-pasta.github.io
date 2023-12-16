@@ -1,12 +1,24 @@
 :host {
-  --content-padding: 10px;
+  --content-padding: 1rem 2rem;
 }
 header {
   display: block;
-  height: 60px;
-  padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
+  padding: var(--content-padding);
 }
+
+header a {
+  display: block;
+}
+
+header img {
+  transition: transform 300ms;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
 .content {
   padding: var(--content-padding);
 }

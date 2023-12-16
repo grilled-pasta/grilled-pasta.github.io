@@ -8,16 +8,16 @@ import { RouterLink, RouterModule } from "@angular/router";
   imports: [HomeComponent, RouterLink, RouterModule],
   template: `
     <main>
-      <a [routerLink]="['/']">
-        <header class="brand-name">
+      <header class="brand-name">
+        <a [routerLink]="['/']">
           <img
             class="brand-logo"
             src="/assets/logo.svg"
             alt="logo"
             aria-hidden="true"
           />
-        </header>
-      </a>
+        </a>
+      </header>
       <section class="content">
         <router-outlet></router-outlet>
       </section>

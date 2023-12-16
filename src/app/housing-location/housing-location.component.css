@@ -1,11 +1,17 @@
 .listing {
   background: var(--accent-color);
-  border-radius: 30px;
-  padding-bottom: 30px;
+  border-radius: 2rem;
+  margin: 1rem 2rem;
+  padding-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.listing:hover {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 12px;
 }
 .listing-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  margin: 1rem;
+  font-size: medium;
 }
 .listing-photo {
   height: 250px;
@@ -15,14 +21,19 @@
 }
 .listing-location {
   padding: 10px 20px 20px 20px;
+  font-size: medium;
 }
 .listing-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
 section.listing a {
-  padding-left: 20px;
+  padding: 1rem 2rem;
   text-decoration: none;
   color: var(--primary-color);
+}
+section.listing a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 section.listing a::after {
   content: "\203A";

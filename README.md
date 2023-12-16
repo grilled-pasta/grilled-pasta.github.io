@@ -1,9 +1,17 @@
 
-https://grilled-pasta.github.io/housing-locations-ui
+[https://grilled-pasta.github.io/](https://grilled-pasta.github.io)
+
+Local Development
 
 ```bash
 npm i -g json-server
-json-server --watch db.json 
+
+// serve from raw github file
+json-server https://raw.githubusercontent.com/grilled-pasta/housing-locations-api/main/db.json
+
+// or download and serve from file system
+json-server --watch db.json
+
 ng serve
 ```
 
